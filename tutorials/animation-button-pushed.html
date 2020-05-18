@@ -1,0 +1,31 @@
+<body>
+  <!-- https://stackoverflow.com/questions/21919044/css3-transition-on-click-using-pure-css -->
+  <style>
+    input {
+      display: none;
+    }
+    .trigger {
+      padding: 20px;
+      background-color: cyan;
+      font-size: 20px;
+    }
+
+    .block {
+      padding: 100px;
+      background-color: green;
+    }
+
+    .checkbox:checked+.block {
+      background-color: red;
+    }
+
+    .trigger:focus {
+      background-color: blue;
+    }
+  </style>
+  <input type="checkbox" id="block-input" class="checkbox"></input>
+  <div class="block"></div>
+  <label for="block-input">
+    <div class="trigger">hi hdsd fdchfjdhfjd</div>
+  </label>
+</body>
